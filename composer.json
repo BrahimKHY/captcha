@@ -1,5 +1,5 @@
 {
-  "name": "drupal/captcha",
+  "name": "bkhouy/captcha",
   "description": "The CAPTCHA module provides this feature to virtually any user facing web form on a Drupal site.",
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
