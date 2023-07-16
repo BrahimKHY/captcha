@@ -1,5 +1,25 @@
 # CAPTCHA
 
+## Important
+This is a temporarily fix of upgrading captcha module from Drupal 9 to Drupal 10,
+see the issue detail on: https://www.drupal.org/project/captcha/issues/3367503
+
+### Upgrading steps:
+
+1 - Remove existing drupal/captcha package: `composer remove drupal/captcha`
+
+2 - Require bkhouy/captcha package: `composer require bkhouy/captcha:^2.0`
+
+3 - Continue upgrading the rest of your project...
+
+4 - Once you finish the upgrade and your project is running on Drupal 10 version
+ on production, then you need to rollback to drupal/captcha module by following
+ those steps:
+ 
+ - Remove bkhouy/captcha package: `composer remove bkhouy/captcha`
+ - Require drupal/captcha package: `composer require drupal/captcha:^2.0`
+
+## Description
 A CAPTCHA is a challenge-response test most often placed within web forms to
 determine whether the user is human. The purpose of CAPTCHA is to block form
 submissions by spambots, which are automated scripts that post spam content
